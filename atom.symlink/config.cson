@@ -1,0 +1,53 @@
+"*":
+  "atom-color-highlight": {}
+  "atom-material-ui":
+    compactTreeView: true
+    panelContrast: true
+  core:
+    disabledPackages: [
+      "welcome"
+      "terminal-status"
+      "open-on-github"
+      "atom-color-highlight"
+      "linter-scss-lint"
+      "php-debug"
+    ]
+    themes: [
+      "atom-material-ui"
+      "base16-ocean-dark-syntax-theme"
+    ]
+  editor:
+    fontFamily: "Hack"
+    invisibles: {}
+    scrollPastEnd: true
+  "exception-reporting":
+    userId: "4bc6b895-5895-16ec-3c1f-6723da066307"
+  linter:
+    ignoredLinterErrors: [
+      "jshint"
+    ]
+  "linter-jshint": {}
+  "linter-scss-lint": {}
+  "php-debug":
+    PathMaps: [
+      {
+        remote: "/srv/www/vaasanseutu.dev/htdocs/web"
+        local: "/Users/joonas/Projects/vagrant-local/www/vaasanseutu.dev"
+      }
+    ]
+    PhpException: {}
+  pigments: {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  wakatime:
+    apikey: "b3762ce7-305f-4810-af20-5d700b503b5e"
+    ignore: [
+      "^/var/"
+      "^/tmp/"
+      "^/private/"
+      "COMMIT_EDITMSG$"
+      "PULLREQ_EDITMSG$"
+      "MERGE_MSG$"
+    ]
+  welcome:
+    showOnStartup: false
