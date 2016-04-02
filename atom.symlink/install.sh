@@ -12,3 +12,5 @@ apm install emmet
 apm install color-picker
 apm install base16-ocean-dark-syntax-theme
 apm install atom-material-ui
+apm install pigments
+apm install minimap

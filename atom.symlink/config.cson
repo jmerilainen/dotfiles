@@ -11,6 +11,7 @@
       "atom-color-highlight"
       "linter-scss-lint"
       "php-debug"
+      "linter-jslint"
     ]
     themes: [
       "atom-material-ui"
@@ -37,17 +38,8 @@
     ]
     PhpException: {}
   pigments: {}
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
   wakatime:
     apikey: "b3762ce7-305f-4810-af20-5d700b503b5e"
-    ignore: [
-      "^/var/"
-      "^/tmp/"
-      "^/private/"
-      "COMMIT_EDITMSG$"
-      "PULLREQ_EDITMSG$"
-      "MERGE_MSG$"
-    ]
   welcome:
     showOnStartup: false

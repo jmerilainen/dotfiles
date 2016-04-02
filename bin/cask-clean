@@ -1,0 +1,26 @@
+#!/bin/sh
+#
+# cask-clean
+
+#that's some old shit
+function cleanCask() {
+    caskBasePath="/opt/homebrew-cask/Caskroom"
+    local cask=$@
+    local caskDirectory="$caskBasePath/$cask"
+    local versionsToRemove="$(ls -r $caskDirectory | sed 1,1d)"
+    if [[ -n $versionsToRemove ]]; then
+        while read versionToRemove ; do
+            echo "Removing $cask $versionToRemove..."
+            rm -rf "$caskDirectory/$versionToRemove"
+        done <<< "$versionsToRemove"
+    fi
+}
+
+#call this command to cleanup all, or you can specify cask name
+  if [[ $# -eq 0 ]]; then
+      while read cask; do
+          $(cleanCask "$cask")
+      done <<< "$(brew cask list)"
+  else
+      clean-cask "$1"
+  fi
