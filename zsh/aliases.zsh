@@ -7,3 +7,6 @@ alias projects=$PROJECTS
 alias sudo='sudo '
 
 alias update='brew update; brew upgrade --all; brew cleanup; cask-update; cask-clean; nvm install node --reinstall-packages-from=node; nvm alias default node; npm update -g; sudo gem update --system; sudo gem update; upgrade_oh_my_zsh; composer self-update;'
+
+alias hidedesktop='defaults write com.apple.finder CreateDesktop false; killall Finder;'
+alias showdesktop='defaults write com.apple.finder CreateDesktop true; killall Finder;'
