@@ -1,7 +1,6 @@
 "*":
   "atom-color-highlight": {}
   "atom-material-ui":
-    compactTreeView: true
     panelContrast: true
   core:
     disabledPackages: [
