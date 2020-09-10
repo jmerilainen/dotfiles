@@ -1,2 +1,0 @@
-
-# Atom customization goes here.

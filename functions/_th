@@ -1,3 +1,0 @@
-#compdef th
-_files -W $CODE -/
-_files -W $CODE/$1/htdocs/web/app/themes/ -/
