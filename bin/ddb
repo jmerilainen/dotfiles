@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+
+import os
+import sys
+import time
+import subprocess
+import urllib.parse
+urllib.parse.uses_netloc.append("mysql")
+
+remote = sys.argv[1]
+url_str=subprocess.getoutput("heroku config:get JAWSDB_URL --remote {0}".format(remote))
+url = urllib.parse.urlparse(url_str)
+timestr = time.strftime("%Y%m%d-%H%M%S")
+location = "~/Projects/_backups/"
+
+cmd = "mysqldump -u{1} -p{2} -h{0} {3} > {5}{0}-{4}.sql".format(url.hostname, url.username, url.password, url.path[1:], timestr, location)
+
+os.system(cmd)

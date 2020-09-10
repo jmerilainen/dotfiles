@@ -1,0 +1,91 @@
+#!/bin/sh
+#
+# dot
+#
+# `dot` handles installation, updates, things like that. Run it periodically
+# to make sure you're on the latest and greatest.
+set -e
+
+ProgName=$(basename $0)
+
+parentDirectory="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd -P)"
+dotfilesDirectory="$(cd "$( dirname "$parentDirectory" )" && pwd -P)"
+
+info () {
+    printf "\r[ \033[00;34m$1 ..\033[0m ] \n"
+}
+  
+dot_help(){
+    echo "Usage: $ProgName <subcommand> [options]\n"
+    echo "Subcommands:"
+    echo "    reload   Reload all configs"
+    echo ""
+    echo "For help with each subcommand run:"
+    echo "$ProgName <subcommand> -h|--help"
+    echo ""
+}
+  
+dot_reload() {
+    echo "Reload..."
+
+    source $DOTFILES/script/bootstrap
+
+    exit 1
+}
+
+dot_update() {
+    info "Updating"
+
+    info "brew update"
+    brew update;
+    brew upgrade; 
+    brew cask upgrade; 
+    brew cleanup; 
+
+    info "node update"
+    nvm install --lts; 
+    nvm alias default "lts/*"; 
+    nvm use default; 
+    npm update -g; 
+
+    info "zsh update"
+    upgrade_oh_my_zsh; 
+
+    info "composer update"
+    composer self-update; 
+
+    info "heroku update"
+    heroku update;
+    info "done"
+    exit 1
+}
+
+dot_edit() {
+    exec "$EDITOR" "$dotfilesDirectory"
+    exit 1
+}
+
+
+dot_main() {
+    subcommand=$1
+    case $subcommand in
+        "" | "-h" | "--help")
+            dot_help
+            ;;
+        *)
+            dot_${subcommand} $@
+            if [ $? = 127 ]; then
+                echo "Error: '$subcommand' is not a known subcommand." >&2
+                echo "       Run '$ProgName --help' for a list of known subcommands." >&2
+                exit 1
+            fi
+            ;;
+    esac
+}
+
+echo $ProgName
+
+if [ "$ProgName" == "dot" ]
+then
+    dot_main $1
+fi
