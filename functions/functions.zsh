@@ -21,3 +21,22 @@ function o() {
 		open "$@";
 	fi;
 }
+
+function p() {
+	if [ $# -eq 0 ]; then
+		cd $PROJECTS_WORK;
+	else
+		cd $PROJECTS_WORK/$1;
+	fi;
+}
+
+function f() {
+	if [ $# -eq 0 ]; then
+		"$EDITOR" ".";
+	else
+		"$EDITOR" "$PROJECTS_WORK/$1";
+	fi;
+}
+
+compctl -W $PROJECTS_WORK -/ p
+compctl -W $PROJECTS_WORK -/ f

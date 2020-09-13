@@ -1,0 +1,20 @@
+alias sudo='sudo '
+alias reload!='. ~/.zshrc'
+
+
+# Directoreis
+alias dot=$DOTFILES
+
+# Misc
+alias updateapps="brew outdated --cask --greedy --verbose | grep -v '(latest)' | awk '{print $1}' | xargs brew reinstall";
+alias update='brew update; brew upgrade; brew upgrade --cask; brew cleanup; nvm install --lts; nvm alias default "lts/*"; nvm use default; npm update -g; omz update; heroku update;'
+alias updatemac="sudo softwareupdate -i -a"
+
+alias hidedesktop='defaults write com.apple.finder CreateDesktop false; killall Finder;'
+alias showdesktop='defaults write com.apple.finder CreateDesktop true; killall Finder;'
+
+# Apps
+alias sr='github'
+alias hl='heroku login --sso'
+alias s='heroku local'
+alias gs='git status'

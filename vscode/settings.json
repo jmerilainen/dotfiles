@@ -1,0 +1,134 @@
+{
+    "window.zoomLevel": 0,
+    "workbench.startupEditor": "none",
+    "breadcrumbs.enabled": false,
+    "terminal.integrated.shellArgs.osx": [],
+    "terminal.integrated.rendererType": "dom",
+    "composer.executablePath": "/usr/local/bin/composer",
+    "editor.renderWhitespace": "selection",
+    "gitlens.views.repositories.location": "scm",
+    "gitlens.views.fileHistory.location": "scm",
+    "gitlens.views.lineHistory.location": "scm",
+    "gitlens.views.compare.location": "scm",
+    "gitlens.views.search.location": "scm",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "name": "Sections",
+                "scope": "entity.name.section",
+                "settings": {
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "name": "Operatores",
+                "scope": "keyword.operator.logical.php",
+                "settings": {
+                    "fontStyle": "bold",
+                    "foreground": "#ff48ff",
+                }
+            },
+            {
+                "name": "Functions",
+                "scope": [
+                    "entity.name.function",
+                    "meta.require",
+                    "support.function.any-method",
+                    "variable.function"
+                ],
+                "settings": {
+                    "fontStyle": "bold",
+                    "foreground": "#61AFEF"
+                }
+            },
+            {
+                "name": "Classes",
+                "scope": [
+                    "entity.name.type.namespace",
+                    "entity.name.type.class",
+                ],
+                "settings": {
+                    "fontStyle": "bold",
+                    "foreground": "#E5C07B"
+                }
+              },
+        ],
+    },
+    "autofold.pack": false,
+    "autofold.types": [
+        { "ext": ".php", "level": 2 }
+    ],
+    "editor.lineHeight": 64,
+    "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 18,
+    "editor.letterSpacing": 0,
+    "editor.rulers": [80, 120],
+    "editor.suggestFontSize": 16,
+    "editor.suggestLineHeight": 30,
+    "explorer.openEditors.visible": 0,
+    "window.openFilesInNewWindow": "on",
+    "workbench.panel.defaultLocation": "right",
+    "workbench.editor.enablePreview": false,
+    "editor.minimap.enabled": false,
+    "terminal.integrated.fontSize": 13,
+    "terminal.integrated.lineHeight": 1.25,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.colorTheme": "Palenight Operator",
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "typescript": "typescriptreact",
+        "blade.php": "html",
+        "vue": "html"
+    },
+    "php.suggest.basic": false,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "files.associations": {
+        ".php_cs": "php",
+        ".php_cs.dist": "php",
+        "*.php": "php"
+    },
+    "workbench.editor.showTabs": false,
+    "workbench.sideBar.location": "right",
+    "workbench.fontAliasing": "antialiased",
+    "editor.codeLens": true,
+    "editor.emptySelectionClipboard": false,
+    "editor.quickSuggestionsDelay": 0,
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#282d3f",
+        "titleBar.inactiveBackground": "#282d3f",
+        "sideBar.background": "#282d3f",
+        "sideBar.border": "#282d3f",
+        "activityBar.background": "#282d3f",
+        "activityBar.border": "#282d3f",
+        "sideBarSectionHeader.border": "#282d3f",
+        "editorGroupHeader.noTabsBackground": "#282d3f",
+        "editorRuler.foreground": "#303547",
+        "editorWhitespace.foreground": "#ffffff0c",
+        "statusBar.background": "#282d3f",
+        "statusBar.border": "#282d3f",
+        "editorGroupHeader.border": "#282d3f",
+        "scrollbarSlider.background": "#8555c931",
+        "activityBar.activeBorder": "#282d3f",
+        "panel.border": "#282d3f",
+        "editorIndentGuide.background": "#fff0",
+        "titleBar.border": "#282d3f",
+        "editor.background": "#282d3f"
+    },
+    "workbench.tree.indent": 18,
+    "window.title": "${activeEditorMedium}${separator}${rootName} ${dirty}",
+    "editor.overviewRulerBorder": false,
+    "editor.scrollbar.horizontal": "hidden",
+    "inline-parameters.enabled": false,
+    "workbench.editor.limit.enabled": true,
+    "window.newWindowDimensions": "offset",
+    "editor.snippetSuggestions": "top",
+    "diffEditor.renderSideBySide": false,
+    "editor.gotoLocation.multipleReferences": "goto",
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "editor.gotoLocation.multipleDeclarations": "goto",
+    "editor.gotoLocation.multipleImplementations": "goto",
+    "editor.gotoLocation.multipleTypeDefinitions": "goto",
+    "editor.renderIndentGuides": false,
+    "workbench.tips.enabled": false
+}
