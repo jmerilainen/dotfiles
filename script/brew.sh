@@ -49,6 +49,7 @@ brew install wget
 
 # Other
 brew install ack
+brew install starship
 
 # Install Dev tools
 brew install awscli

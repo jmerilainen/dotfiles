@@ -63,7 +63,6 @@ do
     source $file
 done
 
-
 # NVM
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
@@ -71,8 +70,8 @@ source $(brew --prefix nvm)/nvm.sh
 # source $(brew --prefix zsh-autosuggestions)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # source $(brew --prefix zsh-syntax-highlighting)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# export STARSHIP_CONFIG=$DOTFILES/starship/starship.toml
-# eval "$(starship init zsh)"
+export STARSHIP_CONFIG=$DOTFILES/starship/starship.toml
+eval "$(starship init zsh)"
 
 # Other
 source .aliases
