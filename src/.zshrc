@@ -14,21 +14,6 @@ export DOTFILES=$PROJECTS_MY/dotfiles
 export EDITOR="code"
 export XDEBUG_CONFIG="idekey=VSCODE"
 
-# Export bin paths
-export PATH="/usr/local/bin:$PATH"
-export PATH=$DOTFILES/bin:/usr/local/bin:$PATH
-export PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
-export PATH="$(brew --prefix)/opt/findutils/libexec/gnubin:$PATH"
-# export PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
-export PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$PATH"
-
-# use .localrc for SUPER SECRET that you don't
-# want in your public, versioned repo
-if [[ -a $HOME/.localrc ]]
-then
-  source $HOME/.localrc
-fi
-
 #
 # Oh My Zsh
 #
@@ -67,11 +52,19 @@ done
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
-# source $(brew --prefix zsh-autosuggestions)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-# source $(brew --prefix zsh-syntax-highlighting)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# # source $(brew --prefix zsh-autosuggestions)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# # source $(brew --prefix zsh-syntax-highlighting)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export STARSHIP_CONFIG=$DOTFILES/starship/starship.toml
 eval "$(starship init zsh)"
 
+export PATH=$(brew --prefix)/bin:$PATH
+export PATH=$(brew --prefix)/sbin:$PATH
+# export PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
+# export PATH="$(brew --prefix)/opt/findutils/libexec/gnubin:$PATH"
+# export PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
+# export PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$PATH"
+export PATH=$DOTFILES/bin:$PATH
+
 # Other
-source .aliases
+source $HOME/.aliases

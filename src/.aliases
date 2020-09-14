@@ -6,7 +6,7 @@ alias reload!='. ~/.zshrc'
 alias dot=$DOTFILES
 
 # Misc
-alias updateapps="brew outdated --cask --greedy --verbose | grep -v '(latest)' | awk '{print $1}' | xargs brew reinstall";
+alias updateapps="brew outdated --cask --greedy --verbose | grep -v '(latest)' | awk '{print $1}' | xargs brew reinstall -q";
 alias update='brew update; brew upgrade; brew upgrade --cask; brew cleanup; nvm install --lts; nvm alias default "lts/*"; nvm use default; npm update -g; omz update; heroku update;'
 alias updatemac="sudo softwareupdate -i -a"
 

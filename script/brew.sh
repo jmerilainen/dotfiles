@@ -40,15 +40,14 @@ brew install gnupg
 
 # Install more recent versions of some macOS tools.
 brew install grep
-brew install grep
 brew install openssh
 brew install rsync
 brew install screen
 brew install vim
 brew install wget
+brew install gmp
 
 # Other
-brew install ack
 brew install starship
 
 # Install Dev tools
@@ -64,6 +63,7 @@ brew install nvm
 brew install php
 brew install php@7.3
 brew install php@7.4
+brew install redis
 brew install svn
 brew install yarn
 
