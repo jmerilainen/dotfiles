@@ -63,6 +63,7 @@ brew install nvm
 brew install php
 brew install php@7.3
 brew install php@7.4
+brew install php@8.0
 brew install redis
 brew install svn
 brew install yarn
@@ -78,23 +79,34 @@ brew install svgo
 
 # Install Apps
 brew cask install 1password
+brew cask install adguard
 brew cask install bettertouchtool
+brew cask install brave-browser
 brew cask install browserstacklocal
 brew cask install firefox
 brew cask install github
 brew cask install google-chrome
+brew cask install hummingbird
 brew cask install hyper
+brew cask install kap
+brew cask install keyboardcleantool
+brew cask install meetingbar
+brew cask install monitorcontrol
 brew cask install mousepose
 brew cask install postman
+brew cask install raycast
 brew cask install rectangle
 brew cask install sequel-ace
 brew cask install sip
 brew cask install sketch
 brew cask install spotify
 brew cask install visual-studio-code
+brew cask install vlc
+
 
 # Fonts
 brew cask install font-hack
+brew cask install font-hack-nerd-font
 
 # Remove outdated versions from the cellar.
 brew cleanup

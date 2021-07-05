@@ -14,6 +14,9 @@ export DOTFILES=$PROJECTS_MY/dotfiles
 export EDITOR="code"
 export XDEBUG_CONFIG="idekey=VSCODE"
 
+# Remove weird % from top of terminal (affects Hyper)
+unsetopt PROMPT_SP
+
 #
 # Oh My Zsh
 #
@@ -48,10 +51,6 @@ do
     source $file
 done
 
-# NVM
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-
 # # source $(brew --prefix zsh-autosuggestions)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # # source $(brew --prefix zsh-syntax-highlighting)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -65,6 +64,10 @@ export PATH=$(brew --prefix)/sbin:$PATH
 # export PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
 # export PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$PATH"
 export PATH=$DOTFILES/bin:$PATH
+
+# NVM
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 # Other
 source $HOME/.aliases

@@ -1,10 +1,6 @@
 // Place your key bindings in this file to overwrite the defaults
 [
     {
-        "key": "shift+cmd+t",
-        "command": "workbench.action.terminal.toggleTerminal"
-    },
-    {
         "key": "ctrl+shift+[Equal]",
         "command": "-workbench.action.terminal.toggleTerminal"
     },
@@ -41,7 +37,7 @@
         "command": "-workbench.view.debug"
     },
     {
-        "key": "shift+cmd+d",
+        "key": "shift+alt+down",
         "command": "editor.action.copyLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -49,8 +45,97 @@
         "key": "shift+alt+down",
         "command": "-editor.action.copyLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+k cmd+k",
+        "command": "toggle",
+        "when": "editorTextFocus",
+        "args": {
+            "id": "fontSize",
+            "value": [
+                {
+                    "editor.fontSize": 17,
+                    "editor.lineHeight": 60,
+                },
+                {
+                    "editor.fontSize": 13,
+                    "editor.lineHeight": 23
+                }
+            ]
+        }
+    },
+    {
+        "key": "cmd+k cmd+t",
+        "command": "toggle",
+        "when": "editorTextFocus",
+        "args": {
+            "id": "theme",
+            "value": [
+                {
+                    "workbench.colorTheme": "Palenight Theme",
+                    "workbench.iconTheme": "rose-pine-icons",
+                    "workbench.productIconTheme": "fluent-icons",
+                },
+                {
+                    "workbench.colorTheme": "GitHub Light",
+                    "workbench.iconTheme": "file-icons-colourless",
+                    "workbench.productIconTheme": "Default",
+                }
+            ]
+        }
+    },
+    {
+        "key": "alt+space",
+        "command": "type",
+        "when": "editorTextFocus",
+        "args": { "text": " " }
+    },
+    {
+        "key": "alt+shift+space",
+        "command": "type",
+        "when": "editorTextFocus",
+        "args": { "text": " " }
+    },
+    {
+        "key": "cmd+k cmd+e",
+        "command": "workbench.view.explorer"
+    },
+    {
+        "key": "cmd+k cmd+g",
+        "command": "workbench.view.scm"
+    },
+    {
+        "key": "cmd+k cmd+d",
+        "command": "workbench.view.debug"
+    },
+    {
+        "key": "cmd+k cmd+x",
+        "command": "workbench.extensions.action.showInstalledExtensions"
+    },
+    {
+        "key": "cmd+k cmd+b",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+e",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "cmd+n",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+d",
+        "command": "editor.action.duplicateSelection"
     }
 ]
-  
- 
- 

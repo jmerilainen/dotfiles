@@ -12,7 +12,7 @@ module.exports = {
     fontSize: 14,
 
     // font family with optional fallbacks
-    fontFamily: 'Hack, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: '"Hack Nerd Font Mono", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
@@ -27,7 +27,7 @@ module.exports = {
     letterSpacing: 0,
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: 'rgba(248,28,229,0.8)',
+    cursorColor: 'rgba(255,255,255,0.2)',
 
     // terminal text color under BLOCK cursor
     cursorAccentColor: '#000',
@@ -36,20 +36,20 @@ module.exports = {
     cursorShape: 'UNDERLINE',
 
     // set to `true` (without backticks and without quotes) for blinking cursor
-    cursorBlink: false,
+    cursorBlink: true,
 
     // color of the text
-    foregroundColor: '#fff',
+    foregroundColor: '#959DCB',
 
     // terminal background color
     // opacity is only supported on macOS
-    backgroundColor: '#282d3f',
+    backgroundColor: '#292D3E',
 
     // terminal selection color
     selectionColor: 'rgba(248,28,229,0.3)',
 
     // border color (window, tabs)
-    borderColor: 'rgba(248,28,229,0)',
+    borderColor: '#292D3E',
 
     // custom CSS to embed in the main window
     css: '',
@@ -67,7 +67,7 @@ module.exports = {
     showWindowControls: '',
 
     // custom padding (CSS format, i.e.: `top right bottom left`)
-    padding: '22px 22px',
+    padding: '22px 34px',
 
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
@@ -80,7 +80,7 @@ module.exports = {
       blue: '#0A2FC4',
       magenta: '#C839C5',
       cyan: '#20C5C6',
-      white: '#C7C7C7',
+      white: '#d0d0d0',
       lightBlack: '#686868',
       lightRed: '#FD6F6B',
       lightGreen: '#67F86F',
