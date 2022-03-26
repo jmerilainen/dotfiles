@@ -7,6 +7,7 @@
 # Directories
 export PROJECTS=$HOME/Projects
 export PROJECTS_WORK=$PROJECTS/frc
+export GITHUB_COM=$HOME/github.com
 export PROJECTS_MY=$PROJECTS/jmerilainen
 export DOTFILES=$PROJECTS_MY/dotfiles
 
@@ -54,6 +55,10 @@ done
 # # source $(brew --prefix zsh-autosuggestions)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # # source $(brew --prefix zsh-syntax-highlighting)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+function set_win_title(){
+    echo -ne "\033]0; $PWD \007"
+}
+precmd_functions+=(set_win_title)
 export STARSHIP_CONFIG=$DOTFILES/starship/starship.toml
 eval "$(starship init zsh)"
 
@@ -68,6 +73,10 @@ export PATH=$DOTFILES/bin:$PATH
 # NVM
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+
+# gcloud
+source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
 # Other
 source $HOME/.aliases

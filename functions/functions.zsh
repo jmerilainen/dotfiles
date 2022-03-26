@@ -38,5 +38,23 @@ function f() {
 	fi;
 }
 
+function g() {
+	if [ $# -eq 0 ]; then
+		cd $GITHUB_COM;
+	else
+		cd $GITHUB_COM/$1;
+	fi;
+}
+
+function gg() {
+	if [ $# -eq 0 ]; then
+		cd $GITHUB_COM;
+	else
+		gh repo clone $1 $GITHUB_COM/$1;
+        cd $GITHUB_COM/$1;
+	fi;
+}
+
 compctl -W $PROJECTS_WORK -/ p
 compctl -W $PROJECTS_WORK -/ f
+compctl -W $GITHUB_COM -/ g

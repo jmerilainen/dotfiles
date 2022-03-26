@@ -3,3 +3,9 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+
+[user]
+    name = Joonas Meriläinen
+    email = merilainenjoonas@gmail.com
+[credential]
+    helper = osxkeychain

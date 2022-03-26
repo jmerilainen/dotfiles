@@ -75,11 +75,25 @@
                     "workbench.colorTheme": "Palenight Theme",
                     "workbench.iconTheme": "rose-pine-icons",
                     "workbench.productIconTheme": "fluent-icons",
+                    "highlight-matching-tag.styles": {
+                        "opening": {
+                            "name": {
+                                "highlight": "rgba(255, 0, 0, 0.2)",
+                            }
+                        }
+                    },
                 },
                 {
                     "workbench.colorTheme": "GitHub Light",
                     "workbench.iconTheme": "file-icons-colourless",
                     "workbench.productIconTheme": "Default",
+                    "highlight-matching-tag.styles": {
+                        "opening": {
+                            "name": {
+                                "highlight": "rgba(0, 131, 0, 0.1)",
+                            }
+                        }
+                    },
                 }
             ]
         }
@@ -135,7 +149,17 @@
         "when": "terminalFocus"
     },
     {
-        "key": "cmd+d",
+        "key": "shift+cmd+d",
         "command": "editor.action.duplicateSelection"
+    },
+    {
+        "key": "alt+down",
+        "command": "-editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+up",
+        "command": "-editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
     }
 ]
