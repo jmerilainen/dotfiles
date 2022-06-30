@@ -5,9 +5,9 @@
 #
 
 # Directories
-export PROJECTS=$HOME/Projects
-export PROJECTS_WORK=$PROJECTS/frc
 export GITHUB_COM=$HOME/github.com
+export PROJECTS=$GITHUB_COM
+export PROJECTS_WORK=$PROJECTS/frc
 export PROJECTS_MY=$PROJECTS/jmerilainen
 export DOTFILES=$PROJECTS_MY/dotfiles
 

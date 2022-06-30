@@ -202,7 +202,6 @@
   "editor.gotoLocation.multipleDeclarations": "goto",
   "editor.gotoLocation.multipleImplementations": "goto",
   "editor.gotoLocation.multipleTypeDefinitions": "goto",
-  "editor.renderIndentGuides": false,
   "workbench.tips.enabled": false,
   "tailwindCSS.includeLanguages": {
     "plaintext": "html",
@@ -227,7 +226,7 @@
   },
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
   "php-cs-fixer.onsave": false,
-  "php-cs-fixer.lastDownload": 1647843393421,
+  "php-cs-fixer.lastDownload": 1656309432028,
   "workbench.editor.limit.value": 2,
   "workbench.activityBar.visible": false,
   "gitlens.menus": {
@@ -266,7 +265,6 @@
       "stash": true
     }
   },
-  "terminal.integrated.tabs.enabled": false,
   "workbench.productIconTheme": "Default",
   "highlight-matching-tag.styles": {
     "opening": {
@@ -280,5 +278,9 @@
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
+  "terminal.integrated.tabs.enabled": false,
+  "gitlens.advanced.fileHistoryFollowsRenames": true,
+  "editor.guides.indentation": false,
+  "redhat.telemetry.enabled": false,
   // "editor.selectionHighlight": false,
 }

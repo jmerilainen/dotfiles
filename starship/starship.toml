@@ -83,3 +83,4 @@ symbol = "ﯣ "
 [gcloud]
 symbol = " "
 format = 'on [$symbol$project@$account(\($region\))]($style) '
+disabled = true
