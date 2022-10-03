@@ -54,8 +54,8 @@
             "id": "fontSize",
             "value": [
                 {
-                    "editor.fontSize": 17,
-                    "editor.lineHeight": 60,
+                    "editor.fontSize": 16,
+                    "editor.lineHeight": 37,
                 },
                 {
                     "editor.fontSize": 13,

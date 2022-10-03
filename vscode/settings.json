@@ -15,8 +15,8 @@
   "editor.quickSuggestions": {
     "comments": true,
     "strings": true
-   },
-   "better-comments.multilineComments": true,
+  },
+  "better-comments.multilineComments": true,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -226,7 +226,7 @@
   },
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
   "php-cs-fixer.onsave": false,
-  "php-cs-fixer.lastDownload": 1656309432028,
+  "php-cs-fixer.lastDownload": 1663826366102,
   "workbench.editor.limit.value": 2,
   "workbench.activityBar.visible": false,
   "gitlens.menus": {
@@ -282,5 +282,7 @@
   "gitlens.advanced.fileHistoryFollowsRenames": true,
   "editor.guides.indentation": false,
   "redhat.telemetry.enabled": false,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "editor.stickyScroll.enabled": true
   // "editor.selectionHighlight": false,
 }

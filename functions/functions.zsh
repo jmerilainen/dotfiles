@@ -30,6 +30,14 @@ function p() {
 	fi;
 }
 
+function j() {
+	if [ $# -eq 0 ]; then
+		cd $PROJECTS_MY;
+	else
+		cd $PROJECTS_MY/$1;
+	fi;
+}
+
 function f() {
 	if [ $# -eq 0 ]; then
 		"$EDITOR" ".";
